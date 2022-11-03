@@ -1,0 +1,27 @@
+{
+  "name": "sql-injection-activity",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cre8ivesolutions/sql-injection-activity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cre8ivesolutions/sql-injection-activity/issues"
+  },
+  "homepage": "https://github.com/cre8ivesolutions/sql-injection-activity#readme"
+}

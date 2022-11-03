@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!-- Create a form with the action set to "/login" and the method set to "post" -->
+<form action="/login" method="post">
+  <!-- Within the form tag, wrap the newly created fields and button in a div with the class of container. -->
+  <div class="container">
+    <!-- The form should contain:
+A required text input labeled username
+A required text input labeled password. Be sure to set the name attribute of this input to "password".
+A Submit button -->
+
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit">Login</button>
+  </div>
+
+  <script>
+    if(document.location.hash === '#unauthorized') {
+        document.write('<div class="unauthorized">Invalid Username or Password</div>');
+    } else if(document.location.hash === '#error') {
+        document.write('<div class="error">An error has occured</div>');
+    }
+  </script>
+
+</form>
+</body>
+</html>
